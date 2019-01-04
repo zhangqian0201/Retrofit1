@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/def_image"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:padding="@dimen/padding_dp_5">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="用户名"
+                android:textColor="@color/color_333333"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/iv_wenan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginTop="33dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_icon_zhiwei"/>
+
+                <TextView
+                    android:id="@+id/tv_wenan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="文案编辑"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_wenan"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/common_icon_company"/>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="上海由客网络信息有限公司"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/padding_dp_10"
+                android:src="@mipmap/ic_launcher"/>
+
+            <ImageView
+                android:id="@+id/iv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_avatar"
+                android:layout_alignRight="@+id/iv_avatar"
+                android:src="@drawable/me_icon_renzheng"/>
+
+            <ImageView
+                android:id="@+id/iv_two_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/padding_dp_5"
+                android:layout_marginRight="@dimen/padding_dp_5"
+                android:src="@drawable/me_icon_erweima"/>
+
+        </RelativeLayout>
+
+        <com.retrofit.view.MyItemView
+            android:id="@+id/item_like_me"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="赞我的"
+            app:my_item_icon="@drawable/me_icon_zan"/>
+
+        <com.retrofit.view.MyItemView
+            android:id="@+id/item_collection_me"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="收藏我的"
+            app:my_item_icon="@drawable/me_icon_shoucang"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="我的印象"
+            app:my_item_icon="@drawable/me_icon_yinxiang"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="编辑名片"
+            app:my_item_icon="@drawable/me_icon_bianji"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="成为认证客户"
+            app:my_item_des="未认证"
+            app:my_item_icon="@drawable/me_icon_renzhengkehu"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="发票帮手"
+            app:my_item_icon="@drawable/me_icon_fapiao"
+            app:my_item_show_line="false"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f7f7f8"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="消息"
+            app:my_item_icon="@drawable/me_icon_xiaoxi"
+            app:my_item_show_line="false"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f7f7f8"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="联系客服"
+            app:my_item_des="12345678912"
+            app:my_item_icon="@drawable/me_icon_kefu"
+            app:my_item_show_right="false"/>
+
+        <com.retrofit.view.MyItemView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:my_item_content="关于"
+            app:my_item_icon="@drawable/me_icon_guanyu"
+            app:my_item_show_line="false"/>
+
+    </LinearLayout>
+
+</ScrollView>

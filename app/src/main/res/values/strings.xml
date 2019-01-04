@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Retrofit</string>
+
+    <string name="list_footer_loading">正在加载中…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已经到底了</string>
+    <string name="cancel">取消</string>
+
+    <string name="empty"/>
+    <string name="zxing_bar_name">ZxingLib</string>
+
+    <!-- SmartPullableLayout -->
+    <string name="smart_ui_pull_down_normal">下拉刷新</string>
+    <string name="smart_ui_pull_down_release_able">释放刷新</string>
+    <string name="smart_ui_pull_down_release">正在刷新</string>
+    <string name="smart_ui_pull_up_normal">上拉加载更多</string>
+    <string name="smart_ui_pull_up_release_able">释放进行加载</string>
+    <string name="smart_ui_pull_up_release">正在加载中…</string>
+    <string name="smart_ui_pull_up_no_more">全部加载完了</string>
+    <string name="permmision_apply">权限申请</string>
+    <string name="external_storage_not_exsit">外部存储不存在</string>
+    <string name="camera_pemmision">我们需要获取您的相册权限以正常使用名片拍摄功能。</string>
+    <string name="pic_permmision_dsc">您没有授予文件读写权限</string>
+    <string name="pic_denied_dsc">相册无法打开，因为您拒绝了打开相册必要的权限请求。请点击\"确定\"跳转到设置界面，找到\"权限管理\"，然后允许\"读写手机存储\"的权限。</string>
+</resources>

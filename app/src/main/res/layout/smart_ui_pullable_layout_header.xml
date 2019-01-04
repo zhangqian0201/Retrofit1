@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|bottom"
+    android:padding="@dimen/padding_dp_20">
+
+    <ImageView
+        android:id="@+id/smart_ui_iv_pull_down_arrow"
+        android:layout_width="@dimen/padding_dp_20"
+        android:layout_height="@dimen/padding_dp_20"
+        android:background="@drawable/smart_ui_pullable_layout_indicate_arrow" />
+
+    <ImageView
+        android:id="@+id/smart_ui_iv_pull_down_loading"
+        android:layout_width="@dimen/padding_dp_20"
+        android:layout_height="@dimen/padding_dp_20"
+        android:background="@drawable/loading_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/smart_ui_tv_pull_down_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/smart_ui_iv_pull_down_arrow"
+        android:layout_marginLeft="@dimen/padding_dp_10"
+        android:layout_toRightOf="@id/smart_ui_iv_pull_down_arrow"
+        android:text="@string/smart_ui_pull_down_normal"
+        android:textColor="@color/color_707070" />
+
+</RelativeLayout>
